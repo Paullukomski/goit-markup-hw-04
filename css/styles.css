@@ -159,7 +159,17 @@ ol {
 .hero {
   background: var(--navyblue);
   padding: 188px 0;
+  min-width: 1440px;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: 100%;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office/people-office.jpg);
 }
 
 .hero-title {
@@ -222,6 +232,7 @@ ol {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
 }
+
 .hero-button-menu {
   background-color: #f4f4fd;
   padding: 12px 24px;
@@ -253,6 +264,20 @@ ol {
   border-top: none;
 }
 /*!--ADVANTAGES--*/
+.advateges-main {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--color-cloud);
+}
+.advateges-link {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -269,6 +294,7 @@ ol {
 .advateges {
   padding-top: 120px;
   padding-bottom: 120px;
+  background: #fff;
 }
 .advateges-section {
   display: flex;
@@ -328,7 +354,7 @@ ol {
 /*!-----------work-------- */
 
 .work {
-  color: var(--navyblue);
+  color: var(--color-navyblue);
   text-align: center;
   /* Header 2 */
   font-family: Roboto;
@@ -381,7 +407,7 @@ ol {
   gap: 24px;
 }
 .personnel {
-  color: var(--navyblue);
+  color: var(--color-navyblue);
   text-align: center;
   /* Header 2 */
   font-family: Roboto;
@@ -397,7 +423,7 @@ ol {
 }
 
 .personnel-mens {
-  color: var(--navyblue);
+  color: var(--color-navyblue);
   text-align: center;
   /* Header 3 */
   font-family: Roboto;
@@ -409,7 +435,7 @@ ol {
 }
 
 .personnel-mens-name {
-  color: var(--navyblue);
+  color: var(--color-navyblue);
   text-align: center;
   /* Header 3 */
   font-family: Roboto;
@@ -431,8 +457,57 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   text-align: center;
+}
+.personnel-social {
+  display: flex;
+  gap: 24px;
+}
+.personnel-sicial-link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+  align-items: center;
+  justify-content: center;
+}
+.personnel-icon {
+  fill: #f4f4fd;
+}
+/*! customers */
+.customers-service {
+  color: var(--color-navyblue);
+  text-align: center;
+  /* Header 2 */
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  border-radius: 0px 0px 4px 4px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 5 * 24px) / 6);
+}
+.customers-link {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 1px solid var(--lightslate, #8e8f99);
+  cursor: pointer;
+  margin-bottom: 120px;
 }
 /*!-----footer-----*/
 .footer {
@@ -476,4 +551,27 @@ ol {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
   max-width: 280px;
+}
+.footer-social-media {
+  color: var(--color-white);
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+.footer-icon {
+  fill: #f4f4fd;
+}
+.footer-sicial-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
 }

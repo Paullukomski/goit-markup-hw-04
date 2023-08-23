@@ -159,7 +159,7 @@ ol {
 .hero {
   background: var(--navyblue);
   padding: 188px 0;
-  min-width: 1440px;
+  max-width: 1440px;
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,6 +201,7 @@ ol {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link-btn {
   background-color: #4d5ae5;
@@ -209,16 +210,7 @@ ol {
 .hero-link-btn:focus {
   background-color: #404bbf;
 }
-.hero-button-menu:hover,
-.hero-button-menu:focus {
-  border: 1px solid transparent;
-}
-.list-button {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-}
+
 /*!---menu---*/
 .hero-button-menu {
   color: var(--iris);
@@ -247,22 +239,7 @@ ol {
   color: #ffffff;
   background-color: #404bbf;
 }
-/*!---portfolio---*/
-.portfolio-service {
-  list-style: none;
-  column-gap: 24px;
-  row-gap: 48px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolio-job {
-  width: calc((100% - 48px) / 3);
-}
-.portfolio-service-images {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
+
 /*!--ADVANTAGES--*/
 .advateges-main {
   width: 264px;
@@ -327,28 +304,6 @@ ol {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
-}
-/*!---service---*/
-.service-subtitle {
-  color: var(--navyblue);
-  /* Header 3 */
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-.service-text {
-  color: var(--color-slate);
-  /* Body */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
 }
 
 /*!-----------work-------- */
@@ -475,8 +430,15 @@ ol {
 .personnel-icon {
   fill: #f4f4fd;
 }
-/*! customers */
-.customers-service {
+/*!---portfolio---*/
+.portfolio-service {
+  /* list-style: none; */
+  column-gap: 24px;
+  row-gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-servise {
   color: var(--color-navyblue);
   text-align: center;
   /* Header 2 */
@@ -484,31 +446,41 @@ ol {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
-  letter-spacing: 0.02em;
+  line-height: 1.111; /* 111.111% */
+  letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-bottom: 72px;
-  border-radius: 0px 0px 4px 4px;
 }
-.customers-list {
-  display: flex;
-  gap: 24px;
+.portfolio-job {
+  width: calc((100% - 48px) / 3);
 }
-.customers-item {
-  width: calc((100% - 5 * 24px) / 6);
+.portfolio-service-images {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
-.customers-link {
-  width: 168px;
-  height: 88px;
-  display: flex;
-  border-radius: 4px;
-  align-items: center;
-  border-radius: 4px;
-  padding: 16px 32px;
-  border: 1px solid var(--lightslate, #8e8f99);
-  cursor: pointer;
-  margin-bottom: 120px;
+/*!---service---*/
+.service-subtitle {
+  color: var(--navyblue);
+  /* Header 3 */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+.service-text {
+  color: var(--color-slate);
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
 /*!-----footer-----*/
 .footer {
   background: var(--navyblue);

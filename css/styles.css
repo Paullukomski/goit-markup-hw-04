@@ -55,7 +55,8 @@ ol {
   margin: 0 auto;
   align-items: center;
   /* display: flex;
-  gap: 24px; */
+  align-items: baseline, */
+  /* gap: 24px; */
 }
 .header-container {
   display: flex;
@@ -102,6 +103,20 @@ ol {
   letter-spacing: 0.02em;
   /* gap: 40px; */
   padding: 24px 0;
+  
+}
+.heder-item{
+position: relative;
+color: #404bbf;
+}
+.heder-list::after{
+  content: '';
+  position: absolute;
+   left: 0;
+   bottom: -1px;
+   height: 4px;
+   background-color: #404bbf;
+   border-radius: 2px;
 }
 .header-description {
   display: flex;
@@ -378,8 +393,8 @@ ol {
   height: 40px;
 }
 .personnel-sicial-link {
-  width: 16px;
-  height: 16px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
   align-items: center;
@@ -443,8 +458,11 @@ ol {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
+transform: translateY(100%)
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-text:hover {
+  transform: translateY(100%);
 }
 /*!---service---*/
 .service-subtitle {

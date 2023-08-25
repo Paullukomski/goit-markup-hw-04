@@ -283,33 +283,6 @@ ol {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
 }
-
-/*!-----------work-------- */
-
-.work {
-  color: var(--color-navyblue);
-  text-align: center;
-  /* Header 2 */
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.11; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  /* max-width: 323px; */
-  margin-bottom: 72px;
-}
-.work-mens-photo {
-  width: calc((100% - 48px) / 3);
-}
-.section-work {
-  padding-bottom: 120px;
-}
-.work-company {
-  display: flex;
-  gap: 24px;
-}
 /*!---job---*/
 .portfolio-job {
   text-decoration: none;
@@ -329,6 +302,8 @@ ol {
 }
 .personnel-mens-list {
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .personnel-mens-list {
@@ -394,16 +369,27 @@ ol {
   text-align: center;
 }
 .personnel-social {
+  justify-content: center;
   display: flex;
   gap: 24px;
+}
+.personnel-list-icon {
+  width: 40px;
+  height: 40px;
 }
 .personnel-sicial-link {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: var(--color-iris);
+  background-color: #4d5ae5;
   align-items: center;
   justify-content: center;
+  display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.personnel-sicial-link:hover,
+.personnel-sicial-link:focus {
+  background-color: #404bbf;
 }
 .personnel-icon {
   fill: #f4f4fd;
@@ -430,11 +416,35 @@ ol {
 }
 .portfolio-job {
   width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-job:hover {
+  transform: translateY(0%);
 }
 .portfolio-service-images {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.portfolio-link-photo {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*!---service---*/
 .service-subtitle {

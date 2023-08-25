@@ -66,6 +66,8 @@ ol {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 25.5;
   padding-bottom: 25.5;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-list {
   text-decoration: none;
@@ -158,6 +160,8 @@ ol {
 
 .hero {
   background: var(--navyblue);
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
   max-width: 1440px;
   display: flex;
@@ -211,35 +215,6 @@ ol {
   background-color: #404bbf;
 }
 
-/*!---menu---*/
-.hero-button-menu {
-  color: var(--iris);
-  text-align: center;
-  cursor: pointer;
-  /* Button Text */
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.04em;
-}
-
-.hero-button-menu {
-  background-color: #f4f4fd;
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-.hero-button-menu:hover {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-.hero-button-menu:focus {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-
 /*!--ADVANTAGES--*/
 .advateges-main {
   width: 264px;
@@ -249,11 +224,14 @@ ol {
 }
 .advateges-link {
   width: 64px;
-  height: 64px;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .visually-hidden {
   position: absolute;

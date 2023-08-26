@@ -15,6 +15,7 @@ body {
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
+  --color-ocean: #404bbf;
 }
 
 /* a {
@@ -103,20 +104,36 @@ ol {
   letter-spacing: 0.02em;
   /* gap: 40px; */
   padding: 24px 0;
-  
 }
-.heder-item{
-position: relative;
-color: #404bbf;
+
+.header-list-item {
+  color: var(--navyblue);
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.heder-list::after{
-  content: '';
+.header-list-item::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+  background: var(--color-ocean);
+  border-radius: 2px;
   position: absolute;
-   left: 0;
-   bottom: -1px;
-   height: 4px;
-   background-color: #404bbf;
-   border-radius: 2px;
+}
+.header-list-item:hover,
+.header-list-item:focus {
+  color: #404bbf;
 }
 .header-description {
   display: flex;
@@ -126,6 +143,7 @@ color: #404bbf;
   display: flex;
   gap: 40px;
 }
+
 .header-list {
   color: var(--navyblue);
   /* Body Medium */
@@ -157,6 +175,7 @@ color: #404bbf;
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-address {
   font-style: normal;
@@ -458,12 +477,12 @@ color: #404bbf;
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-transform: translateY(100%)
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-text:hover {
+/* .personnel-mens-photo:hover {
   transform: translateY(100%);
-}
+} */
 /*!---service---*/
 .service-subtitle {
   color: var(--navyblue);

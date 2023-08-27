@@ -290,12 +290,10 @@ ol {
   display: flex;
   gap: 24px;
 }
-.advateges-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+
 .advateges-main {
   width: calc((100% - 72px) / 4);
+  margin-bottom: 120px;
 }
 .advanteges-subtitle {
   color: var(--navyblue);
@@ -342,7 +340,6 @@ ol {
 }
 
 .personnel-mens-list {
-  margin-bottom: 120px;
   border-radius: 0px 0px 4px 4px;
 }
 .personnel-mens {
@@ -436,6 +433,7 @@ ol {
   row-gap: 48px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 .portfolio-servise {
   color: var(--color-navyblue);
@@ -448,6 +446,8 @@ ol {
   line-height: 1.111; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 .portfolio-job:hover {
   /* width: calc((100% - 48px) / 3); */
